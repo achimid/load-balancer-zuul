@@ -1,0 +1,13 @@
+zuul:
+  routes:
+    app:
+      path: /**
+      serviceId: app
+
+app:
+  ribbon:
+    listOfServers: ${SERVERS}
+
+ribbon:
+  eureka:
+    enabled: false
